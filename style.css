@@ -1,10 +1,115 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.component {
+  max-width: 65rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: row;
+}
+
+.image-container {
+  background: url(./images/drawers.jpg);
+  width: 100%;
+  background-size: cover;
+  height: 26rem;
+}
+
+.info-container {
+  background-color: rgb(255, 255, 255);
+  padding: 4.2rem 3.2rem 2.2rem;
+}
+
+h1 {
+  font-size: 1.65rem;
+  color: hsl(217, 19%, 35%);
+  padding-bottom: 1.3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: hsl(214, 17%, 51%);
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: relative; */
+  padding: 1.8rem 2rem 0rem 0rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.img-profile-container {
+  display: flex;
+}
+
+.img-profile-container img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.profile-info {
+  padding-left: 1.5rem;
+  align-self: center;
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: hsl(217, 19%, 35%);
+}
+
+h4 {
+  font-size: 1rem;
+  color: hsl(212, 23%, 69%);
+}
+
+.button-area {
+  background: hsl(210, 46%, 95%);
+
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  margin-top: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .attribution {
+  /* margin-top: 25rem; */
   font-size: 11px;
   text-align: center;
 }
