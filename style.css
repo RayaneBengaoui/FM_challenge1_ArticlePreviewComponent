@@ -24,7 +24,6 @@ body {
 .component {
   max-width: 65rem;
   border-radius: 1rem;
-  overflow: hidden;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
 
   display: flex;
@@ -36,11 +35,15 @@ body {
   width: 100%;
   background-size: cover;
   height: 26rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .info-container {
   background-color: rgb(255, 255, 255);
   padding: 4.2rem 3.2rem 2.2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 h1 {
@@ -58,7 +61,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: relative; */
+  position: relative;
   padding: 1.8rem 2rem 0rem 0rem;
 }
 
@@ -108,11 +111,66 @@ h4 {
   align-items: center;
 }
 
+.share {
+  visibility: hidden;
+  opacity: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -5rem;
+  left: 18rem;
+
+  background-color: hsl(217, 19%, 35%);
+  width: 25rem;
+
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+}
+
+.share::after {
+  background-color: hsl(217, 19%, 35%);
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 2rem;
+  bottom: -0.8rem;
+  left: 50%;
+  transform: rotate(45deg);
+}
+
+.share p {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 3.5rem;
+}
+
+.share ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+}
+
+li {
+  padding-right: 1.5rem;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 .attribution {
-  /* margin-top: 25rem; */
+  position: fixed;
+  bottom: 1rem;
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  font-size: 1rem;
 }
